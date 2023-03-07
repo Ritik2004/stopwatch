@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+    margin-top: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    position: relative;
+    font-size: 6vw;
+    font-weight: 900;
+  z-index: 1;
+  overflow: hidden;
+  color: #fff;
+}
+h1:before
+{
+    content: '';
+    position: absolute;
+    left: 110%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes animate
+
+{ 
+    0%
+    {
+      left:110%
+    }
+    100%
+    {
+      left:-20%
+    }
+}
+h1 span{
+     color: #ff022c;
+}
+
+body{
+    background-color: #000;
+   
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+   color: white;
+   flex-direction: column;
+}
+.digit{
+    font-size: 100px;
+    font-weight: bold;
+}
+.txt{
+    font-size: 30px;
+    font-weight: bold;
+}
+#btn-container{
+    text-align:  center;
+    margin-top: 40px;
+}
+.btn{
+    margin:20px 10px;
+    padding:7px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#start{
+    background-color: rgb(165, 103, 59);
+}
+#stop{
+    background-color: rgb(115, 64, 162);
+}
+#reset{
+    background-color: rgb(120, 168, 72);
+}
