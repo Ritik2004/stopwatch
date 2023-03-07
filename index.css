@@ -80,3 +80,14 @@ body{
 #reset{
     background-color: rgb(120, 168, 72);
 }
+@media screen and (max-width:600px)
+{
+    .digit{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .txt{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
