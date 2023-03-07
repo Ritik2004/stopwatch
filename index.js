@@ -7,7 +7,7 @@ var sec = 0;
 var count = 0;
 
 var timer = false;
-
+//when the start function is called timer will be made true and stopwatch function will be called
 function start(){
  timer=true;
  stopWatch();
@@ -31,6 +31,9 @@ function reset(){
      audio.pause();
 }
 
+//this is a main function which controls the clock when it is called it will check wheteher timer is true or not if true
+//then the work will start
+//count is one hundreth of a second so when it becomes 100 we increase second. Simillarly we will do for hr, min.
 function stopWatch(){
    if(timer == true){
      count=count+1;
